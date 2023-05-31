@@ -1,0 +1,43 @@
+.mobile-nav-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
+.nav-icon,
+.nav-icon::before,
+.nav-icon::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+.nav-icon::before,
+.nav-icon::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+}
+.nav-icon::before {
+    transform: translateY(-5px);
+}
+.nav-icon::after {
+    transform: translateY(5px);
+}
+.mobile-nav-btn-active .nav-icon::before {
+    transform: rotate(45deg);
+}
+.mobile-nav-btn-active .nav-icon::after {
+    transform: rotate(-45deg);
+}
+.mobile-nav-btn-active .nav-icon {
+    height: 0;
+}

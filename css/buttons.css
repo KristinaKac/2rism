@@ -1,0 +1,23 @@
+/* Кнопка Discover on 3D Globe */
+.button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 72px;
+    background-color: #7B61FF;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3; /*line-height: 24px; переведем 24/18=1.3*/
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease-in;
+}
+.button:hover {
+    background-color: #4a28f3;
+}
+@media (max-width: 600px){
+    .button{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
